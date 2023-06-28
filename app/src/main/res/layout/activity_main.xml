@@ -7,67 +7,67 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonPlane"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="20dp"
         android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/buttonUpdatingProfile"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         tools:layout_editor_absoluteX="165dp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonUpdatingProfile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPictureSaved"
         tools:layout_editor_absoluteX="165dp" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/buttonPictureSaved"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintBottom_toTopOf="@+id/imageAndy"
         tools:layout_editor_absoluteX="165dp" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/buttonUnlocked"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Button"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageAndy"
         tools:layout_editor_absoluteX="165dp" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/buttonLevel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Button"
-        app:layout_constraintTop_toBottomOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/buttonUnlocked"
         tools:layout_editor_absoluteX="165dp" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/buttonMusic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="16dp"
         android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button5"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLevel"
         app:layout_constraintVertical_bias="0.0"
         tools:layout_editor_absoluteX="165dp" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imageAndy"
         android:layout_width="239dp"
         android:layout_height="215dp"
         android:layout_marginStart="16dp"
