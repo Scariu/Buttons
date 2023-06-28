@@ -12,47 +12,52 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="20dp"
-        android:text="Button"
+        android:text="Turn off flight mode"
         app:layout_constraintBottom_toTopOf="@+id/buttonUpdatingProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        tools:layout_editor_absoluteX="165dp" />
+        app:layout_constraintVertical_bias="0.973" />
 
     <Button
         android:id="@+id/buttonUpdatingProfile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-        android:text="Button"
+        android:text="Updating profile"
         app:layout_constraintBottom_toTopOf="@+id/buttonPictureSaved"
-        tools:layout_editor_absoluteX="165dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/buttonPictureSaved"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-        android:text="Button"
+        android:text="Picture saved to gallery"
         app:layout_constraintBottom_toTopOf="@+id/imageAndy"
-        tools:layout_editor_absoluteX="165dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/buttonUnlocked"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Button"
-        app:layout_constraintTop_toBottomOf="@+id/imageAndy"
-        tools:layout_editor_absoluteX="165dp" />
+        android:text="Unlocked level 5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageAndy" />
 
     <Button
         android:id="@+id/buttonLevel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Button"
-        app:layout_constraintTop_toBottomOf="@+id/buttonUnlocked"
-        tools:layout_editor_absoluteX="165dp" />
+        android:text="Level 4 completed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonUnlocked" />
 
     <Button
         android:id="@+id/buttonMusic"
@@ -60,11 +65,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="16dp"
-        android:text="Button"
+        android:text="Music paused"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonLevel"
-        app:layout_constraintVertical_bias="0.0"
-        tools:layout_editor_absoluteX="165dp" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/imageAndy"
