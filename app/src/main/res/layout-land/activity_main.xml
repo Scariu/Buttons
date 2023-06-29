@@ -10,14 +10,18 @@
         android:id="@+id/buttonPlane"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="56dp"
         android:backgroundTint="#7559D9"
         android:drawableLeft="@drawable/baseline_airplanemode_inactive_24"
         android:padding="20sp"
         android:text="Turn off flight mode"
         android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPictureSaved"
+        app:layout_constraintEnd_toEndOf="@+id/buttonPictureSaved"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonPictureSaved"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="233dp" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/buttonUpdatingProfile"
@@ -40,16 +44,16 @@
         android:id="@+id/buttonPictureSaved"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
         android:backgroundTint="#C9C9C9"
         android:padding="20sp"
         android:text="Picture saved to gallery"
         android:textColor="#C33434"
         android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="@+id/buttonPlane"
-        app:layout_constraintTop_toBottomOf="@+id/buttonPlane"
+        app:layout_constraintBottom_toBottomOf="@+id/imageAndy"
+        app:layout_constraintTop_toTopOf="@+id/imageAndy"
         app:strokeColor="#A19F9F"
-        app:strokeWidth="1dp" />
+        app:strokeWidth="1dp"
+        tools:layout_editor_absoluteX="224dp" />
 
     <Button
         android:id="@+id/buttonUnlocked"
@@ -57,14 +61,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="32dp"
         android:backgroundTint="#484D50"
         android:padding="20sp"
         android:text="Unlocked level 5"
         android:textColor="#61C1CD"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/buttonUpdatingProfile"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.433"
         app:layout_constraintStart_toEndOf="@+id/buttonPictureSaved"
         app:layout_constraintTop_toBottomOf="@+id/buttonUpdatingProfile"
         app:strokeWidth="3dp"
@@ -83,6 +87,7 @@
         android:textSize="20sp"
         app:cornerRadius="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonPictureSaved"
         app:layout_constraintStart_toStartOf="@+id/buttonPictureSaved"
         app:layout_constraintTop_toBottomOf="@+id/buttonPictureSaved"
         app:layout_constraintVertical_bias="0.0" />
@@ -105,20 +110,19 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/buttonLevel"
         app:layout_constraintTop_toBottomOf="@+id/buttonUnlocked"
-        app:layout_constraintVertical_bias="0.076" />
+        app:layout_constraintVertical_bias="0.095" />
 
     <ImageView
         android:id="@+id/imageAndy"
         android:layout_width="197dp"
         android:layout_height="176dp"
         android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/buttonPlane"
+        app:layout_constraintEnd_toStartOf="@+id/buttonPictureSaved"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.434"
+        app:layout_constraintVertical_bias="0.468"
         app:srcCompat="@drawable/andy" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
