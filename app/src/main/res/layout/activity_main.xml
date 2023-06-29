@@ -69,8 +69,8 @@
         app:layout_constraintEnd_toEndOf="@+id/imageAndy"
         app:layout_constraintStart_toStartOf="@+id/imageAndy"
         app:layout_constraintTop_toBottomOf="@+id/imageAndy"
-        app:strokeWidth="3dp"
-        tools:strokeColor="#61C1CD" />
+        app:strokeColor="#61C1CD"
+        app:strokeWidth="3dp" />
 
     <Button
         android:id="@+id/buttonLevel"
