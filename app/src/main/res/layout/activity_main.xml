@@ -61,6 +61,7 @@
         android:backgroundTint="#484D50"
         android:padding="20sp"
         android:text="Unlocked level 5"
+        android:textColor="#61C1CD"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
