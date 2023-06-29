@@ -18,14 +18,14 @@
         android:text="Turn off flight mode"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/buttonUpdatingProfile"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonUpdatingProfile"
+        app:layout_constraintStart_toStartOf="@+id/buttonUpdatingProfile"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/buttonUpdatingProfile"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:backgroundTint="#D9525E"
@@ -34,9 +34,9 @@
         android:text="Updating profile"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/buttonPictureSaved"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonPictureSaved"
         app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/buttonPictureSaved" />
 
     <Button
         android:id="@+id/buttonPictureSaved"
@@ -49,9 +49,9 @@
         android:textColor="#C33434"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/imageAndy"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageAndy"
         app:layout_constraintHorizontal_bias="0.464"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/imageAndy" />
 
     <Button
         android:id="@+id/buttonUnlocked"
@@ -64,8 +64,8 @@
         android:text="Unlocked level 5"
         android:textColor="#61C1CD"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageAndy"
+        app:layout_constraintStart_toStartOf="@+id/imageAndy"
         app:layout_constraintTop_toBottomOf="@+id/imageAndy"
         app:strokeWidth="3dp"
         tools:strokeColor="#61C1CD" />
@@ -74,15 +74,17 @@
         android:id="@+id/buttonLevel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:backgroundTint="#5F94D9"
         android:drawableLeft="@android:drawable/btn_star_big_on"
         android:drawableRight="@android:drawable/btn_star_big_on"
-        android:padding="10sp"
+        android:padding="15sp"
         android:text="Level 4 completed"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:cornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonUnlocked"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/buttonUnlocked"
         app:layout_constraintTop_toBottomOf="@+id/buttonUnlocked" />
 
     <Button
@@ -93,15 +95,16 @@
         android:layout_marginBottom="16dp"
         android:backgroundTint="#49A660 "
         android:drawableLeft="@drawable/baseline_pause_circle_24"
-        android:padding="10sp"
+        android:padding="15sp"
         android:text="Music paused"
         android:textSize="20sp"
+        app:cornerRadius="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonLevel"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="@+id/buttonLevel"
         app:layout_constraintTop_toBottomOf="@+id/buttonLevel"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
         android:id="@+id/imageAndy"
