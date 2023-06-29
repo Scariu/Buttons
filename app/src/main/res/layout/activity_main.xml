@@ -11,46 +11,57 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="#7559D9"
         android:drawableLeft="@drawable/baseline_airplanemode_inactive_24"
+        android:padding="20sp"
         android:text="Turn off flight mode"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/buttonUpdatingProfile"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.973" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/buttonUpdatingProfile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="#D9525E"
         android:drawableLeft="@drawable/baseline_cached_24"
+        android:padding="20sp"
         android:text="Updating profile"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/buttonPictureSaved"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/buttonPictureSaved"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="#C9C9C9"
+        android:padding="20sp"
         android:text="Picture saved to gallery"
+        android:textColor="#C33434"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/imageAndy"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/buttonUnlocked"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:backgroundTint="#484D50"
+        android:padding="20sp"
         android:text="Unlocked level 5"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageAndy" />
@@ -59,11 +70,13 @@
         android:id="@+id/buttonLevel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:backgroundTint="#5F94D9"
         android:drawableLeft="@android:drawable/btn_star_big_on"
         android:drawableRight="@android:drawable/btn_star_big_on"
+        android:padding="10sp"
         android:text="Level 4 completed"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonUnlocked" />
@@ -72,11 +85,13 @@
         android:id="@+id/buttonMusic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
         android:backgroundTint="#49A660 "
         android:drawableLeft="@drawable/baseline_pause_circle_24"
+        android:padding="10sp"
         android:text="Music paused"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -86,13 +101,14 @@
 
     <ImageView
         android:id="@+id/imageAndy"
-        android:layout_width="239dp"
-        android:layout_height="215dp"
+        android:layout_width="208dp"
+        android:layout_height="183dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/andy"
-        tools:layout_editor_absoluteY="258dp" />
+        tools:layout_editor_absoluteY="297dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
